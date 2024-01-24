@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Conversion Information</title>
+</head>
+<body>
+    <header>
+        <h1>Conversion Information</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="conversion.html">Conversion</a></li>
+        </ul>
+    </nav>
+    <section>
+      <h2> CURRENCY </h2>
+        <p>Currency conversion allows you to convert one currency to another based on the current exchange rates.</p>
+        <!-- Add more information about currency conversion if needed -->
+
+        <!-- Button to go to the Currency Calculator Page -->
+        <button onclick="goToCurrencyCalculator()">Go to Currency Calculator</button>
+        <h2> MEASUREMENT </h2>
+        <p>Explore the conversions between millimeters (mm), centimeters (cm), meters (m), and kilometers (km).</p>
+        <button onclick="goToMeasurementCalculator()">Go to Measurement Calculator</button>
+        <h2> TEMPEREATURE </h2>
+         <p>Discover the conversions between Celsius (°C), Fahrenheit (°F), and Kelvin (K).</p>
+         <button onclick="goToTemperatureCalculator()">Go to Temperature Calculator</button>
+         <h2> WEIGHT </h2>
+          <p>Explore the conversions between grams (g), kilograms (kg), pounds (lb), and ounces (oz).</p>
+          <button onclick="goToWeightCalculator()">Go to Weight Calculator</button>
+    </section>
+    <footer>
+        <p>&copy; 2024 Conversion Calculator</p>
+    </footer>
+
+    <!-- JavaScript to navigate to the Calculator Page -->
+     <script>
+          function goToCurrencyCalculator() {
+            window.location.href = 'currency_calculator.html';
+        }
+
+        function goToMeasurementCalculator() {
+            window.location.href = 'measurement_calculator.html';
+        }
+
+        function goToTemperatureCalculator() {
+            window.location.href = 'temperature_calculator.html';
+        }
+
+        function goToWeightCalculator() {
+            window.location.href = 'weight_calculator.html';
+        }
+    </script>
+</body>
+</html>

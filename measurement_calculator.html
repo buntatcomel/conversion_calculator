@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="measurement_calculator.js" defer></script>
+    <title>Measurement Conversion Calculator</title>
+</head>
+<body>
+    <header>
+        <h1>Measurement Conversion Calculator</h1>
+    </header>
+     <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="conversion.html">Conversion</a></li>
+        </ul>
+    </nav>
+    <section>
+        <label for="measurement">Enter Measurement:</label>
+        <input type="number" id="measurement">
+        
+        <label for="fromUnit">From Unit:</label>
+        <select id="fromUnit">
+            <option value="mm">Millimeters (mm)</option>
+            <option value="cm">Centimeters (cm)</option>
+            <option value="m">Meters (m)</option>
+            <option value="km">Kilometers (km)</option>
+        </select>
+        
+        <label for="toUnit">To Unit:</label>
+        <select id="toUnit">
+            <option value="mm">Millimeters (mm)</option>
+            <option value="cm">Centimeters (cm)</option>
+            <option value="m">Meters (m)</option>
+            <option value="km">Kilometers (km)</option>
+        </select>
+        
+        <button onclick="convertMeasurement()">Convert</button>
+
+        <p id="measurementResult">Result will be displayed here.</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Conversion Calculator</p>
+    </footer>
+</body>
+</html>

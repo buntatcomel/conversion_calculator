@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="calculator.js" defer></script>
+    <title>Currency Conversion Calculator</title>
+</head>
+<body>
+    <header>
+        <h1>Currency Conversion Calculator</h1>
+    </header>
+     <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="conversion.html">Conversion</a></li>
+        </ul>
+    </nav>
+    <section>
+        <label for="amount">Enter Amount:</label>
+        <input type="number" id="amount">
+        
+        <label for="fromCurrency">From Currency:</label>
+        <select id="fromCurrency">
+        <option value="myr">MYR (Malaysian Ringgit)</option>
+            <option value="sgd">SGD (Singapore Dollar)</option>
+            <option value="usd">USD (US Dollar)</option>
+            <option value="idr">IDR (Indonesian Rupiah)</option>
+        </select>
+        
+        <label for="toCurrency">To Currency:</label>
+        <select id="toCurrency">
+            <option value="myr">MYR (Malaysian Ringgit)</option>
+            <option value="sgd">SGD (Singapore Dollar)</option>
+            <option value="usd">USD (US Dollar)</option>
+            <option value="idr">IDR (Indonesian Rupiah)</option>
+        </select>
+        
+        <button onclick="convertCurrency()">Convert</button>
+
+        <p id="result">Result will be displayed here.</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Conversion Calculator</p>
+    </footer>
+</body>
+</html>
